@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Homework3</h1>
+    <p>import random</p>
+<p></p>
+        <p>def get_numbers_ticket(min, max, quantity):</p>
+            <p>if not (1 <= min <= max <= 1000):</p>
+                <p>return []</p>
+            <p>if not (min <= quantity <= max - min + 1):</p>
+                <p>return []</p>
+            <p></p>
+            <p>numbers = set()</p>
+            <p>while len(numbers) < quantity:</p>
+                <p>numbers.add(random.randint(min, max))</p>
+            <p></p>
+            <p>result = sorted(numbers)</p>
+            <p>return result</p>
+<p>   </p>
+
+        <p>from datetime import datetime</p>
+<p></p>
+            <p>def get_days_from_today(date):</p>
+                <p>date = datetime.strptime(date, "%Y-%m-%d")</p>
+                <p>today = datetime.today()</p>
+                <p>delta = today - date</p>
+            <p></p>
+                <p>return delta.days</p>
+            <p></p>
+            <p>print(get_days_from_today("2024-5-30"))</p>
+</body>
+</html>
